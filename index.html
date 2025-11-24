@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Domain & Hosting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a onclick="showPage('domain')">Domain</a>
+    <a onclick="showPage('hosting')">Hosting</a>
+    <a onclick="showPage('ekstensi')">Ekstensi</a>
+    <a onclick="showPage('provider')">Penyedia Layanan</a>
+</nav>
+
+<!-- HALAMAN DOMAIN -->
+<section id="domain" class="page">
+    <h1>Apa Itu Domain?</h1>
+    <img src="social-2412463_1920.png"/>
+    <p>
+       Domain adalah alamat unik yang digunakan untuk mengakses sebuah website di internet.
+Contohnya:
+
+<b>google.com</b>
+<b>facebook.com</b>
+<b>tokopedia.com</b>
+Jika website diibaratkan sebagai sebuah rumah, maka domain adalah alamat rumahnya, sehingga orang bisa mengunjunginya dengan mudah.
+
+Tanpa domain, pengguna harus mengetik alamat IP server seperti:
+172.217.194.113 → sangat sulit diingat.
+Dengan domain, cukup ketik google.com → mudah diingat.
+
+Fungsi Domain
+
+Alamat website agar mudah diakses.
+
+Identitas brand (contoh: tokopedia.com → brand resmi).
+
+Meningkatkan kepercayaan pengguna.
+
+Memudahkan promosi karena lebih mudah diingat.
+
+Menjadi identitas unik—di seluruh dunia tidak ada dua domain yang sama.
+    </p>
+</section>
+
+<!-- HALAMAN HOSTING -->
+<section id="hosting" class="page" style="display:none;">
+    <h1>Apa Itu Hosting?</h1>
+    <img src="servers-7320576_1920 (1).png"/>
+    <p>
+       Hosting adalah tempat atau server untuk menyimpan semua file website, seperti HTML, CSS, gambar, video, dan database, agar website bisa diakses secara online.
+
+Jika website diibaratkan sebuah rumah, hosting adalah tanah dan bangunan rumahnya, sedangkan domain adalah alamat rumah.
+
+Tanpa hosting, website tidak bisa muncul di internet, karena file-file website tidak tersimpan di server.
+
+Fungsi Hosting
+
+Menyimpan file website agar bisa diakses online.
+
+Menyediakan database untuk aplikasi website.
+
+Menjamin website berjalan 24/7.
+
+Memungkinkan mengelola email profesional (contoh: info@domainmu.com
+).
+    </p>
+</section>
+
+<!-- HALAMAN EKSTENSI -->
+<section id="ekstensi" class="page" style="display:none;">
+    <h1>Ekstensi Domain</h1>
+    <img src="web-design-1327873_1920 (2).png" />
+    <ul>
+        <li>.com – Komersial</li>
+        <li>.net – Jaringan</li>
+        <li>.org – Organisasi</li>
+        <li>.id – Indonesia</li>
+        <li>.edu – Pendidikan</li>
+    </ul>
+</section>
+
+<!-- HALAMAN PROVIDER -->
+<section id="provider" class="page" style="display:none;">
+    <h1>Penyedia Domain & Hosting</h1>
+    <img src="img-1-23.jpg.webp"/>
+    <ul>
+        <li>Niagahoster</li>
+        <li>Hostinger</li>
+        <li>Cloudflare</li>
+        <li>Bluehost</li>
+        <li>Domainesia</li>
+    </ul>
+</section>
+
+<script>
+    function showPage(pageName) {
+        let pages = document.querySelectorAll('.page');
+        pages.forEach(p => p.style.display = 'none');
+
+        document.getElementById(pageName).style.display = 'block';
+        window.scrollTo(0, 0);
+    }
+</script>
+
+</body>
+</html>
